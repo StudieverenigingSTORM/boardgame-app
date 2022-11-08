@@ -1,0 +1,87 @@
+body {
+    text-align: center;
+    width: 80vw;
+    padding-top: 3vh;
+    padding-left: 10vw;
+}
+span {
+  padding-right: 10px;
+  font-size: 22px;
+}
+.game {
+  padding-top: 10vh;
+  opacity: 0;
+}
+.description {
+  white-space: pre-line;
+}
+p#game_title{
+  color: white;
+  font-size: 32px;
+  text-shadow: 1px 1px 2px black, 0 0 10px rgb(4, 41, 4), 0 0 5px darkblue;
+}
+#title {
+  height: 10vh;
+  background-color: white;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+#thumbnail {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5), 0 8px 26px 0 rgba(0, 0, 0, 0.5);
+}
+
+/*******************/
+/* DROP DOWN MENUS */
+/*******************/
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 32px;
+  width: 26vw;
+  height: 10vh;
+  border-color: black;
+  border-width: 2px;
+  cursor: pointer;
+  text-align: center;
+}
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  top: 0;
+  z-index: 2;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  max-width: inherit;
+  overflow: auto;
+  border: 1px solid black;
+  z-index: 1;
+  width: 24.5vw;
+}
+.dropdown-content a {
+  color: black;
+  padding: 30px 16px 50px;
+  text-decoration: none;
+  display: block;
+  font-size: 28px;
+}
+.dropdown a:hover {
+  background-color: #ddd;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+/* END DROP DOWN MENUS */

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="index.css" />
+    <script src="d3.js" type='text/javascript'></script>
+    <script src="index.js" type='text/javascript'></script>
+  </head>
+  <body>
+    <div class="description">
+      <!-- Game descriptions injected here using d3 (in index.js) -->
+    </div>
+    <!-- <div id="title">
+      <h1>STORM<br>Board Games</h1>
+    </div> -->
+    <div class="dropdown">
+      <button onclick="toggle_dropdown('num_players')" class="dropbtn" id="button_players">Players (any)</button>
+      <div id="dropdown_num_players" class="dropdown-content">
+        <a onclick="set_value('num_players', 'any')">Any</a>
+        <a onclick="set_value('num_players', '1')">1</a>
+        <a onclick="set_value('num_players', '2')">2</a>
+        <a onclick="set_value('num_players', '3')">3</a>
+        <a onclick="set_value('num_players', '4')">4</a>
+        <a onclick="set_value('num_players', '5')">5</a>
+        <a onclick="set_value('num_players', '6')">6</a>
+        <a onclick="set_value('num_players', '7+')">7+</a>
+      </div>
+    </div><div class="dropdown">
+      <button onclick="toggle_dropdown('playing_time')" class="dropbtn" id="button_time">Time (any)</button>
+      <div id="dropdown_playing_time" class="dropdown-content">
+        <a onclick="set_value('playing_time', 'any')">Any</a>
+        <a onclick="set_value('playing_time', 'short')">&lt; 30</a>
+        <a onclick="set_value('playing_time', 'mid')">30-60</a>
+        <a onclick="set_value('playing_time', 'long')">60+</a>
+      </div>
+    </div><div class="dropdown">
+      <button onclick="toggle_dropdown('rating')" class="dropbtn" id="button_rating">Rating (any)</button>
+      <div id="dropdown_rating" class="dropdown-content">
+        <a onclick="set_value('rating', 'any')">Any</a>
+        <a onclick="set_value('rating', 'high')">High</a>
+      </div>
+    </div>
+    <div class="injectable">
+      <!-- Games injected here using d3 (in index.js) -->
+    </div>
+  </body>
+</html>
